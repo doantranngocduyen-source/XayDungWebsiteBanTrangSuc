@@ -1,0 +1,97 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import "./LaunchingScreen.css"
+import mainlogo from '../Components/Accsesories/Images/MainLogo.png'
+
+
+
+
+export default function LanchingScreen(){
+
+    const navigate=useNavigate();
+ 
+
+return(
+<div className="LanchingScreen">
+    <div className="titleSection">
+	<img src={mainlogo}/>
+	
+	
+	</div>
+
+<div class="cols">
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+				<div className="front" style={{backgroundImage: `url(${require('../Components/Accsesories/Images/1.jpg')})`}}>
+
+						<div class="inner">
+							<p></p>
+              <span></span>
+						</div>
+					</div>
+					<div class="back" style={{backgroundImage: `url(${require('../Components/Accsesories/Images/1.jpg')})`}}>
+						<div class="inner">
+						  <p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+                <div className="front" style={{backgroundImage: `url(${require('../Components/Accsesories/Images/2.jpg')})`}}>
+						<div class="inner">
+							<p></p>
+              <span> </span>
+						</div>
+					</div>
+					<div class="back" style={{backgroundImage: `url(${require('../Components/Accsesories/Images/2.jpg')})`}}>
+						<div class="inner">
+						  <p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+                <div className="front" style={{backgroundImage: `url(${require('../Components/Accsesories/Images/3.jpg')})`}}>
+						<div class="inner">
+							<p></p>
+              <span> </span>
+						</div>
+					</div>
+					<div class="back" style={{backgroundImage: `url(${require('../Components/Accsesories/Images/3.jpg')})`}}>
+						<div class="inner">
+						  <p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+            
+ </div>
+
+
+<div className="Getstarted">
+	<Link to="/1" className="link-arrow font-reg">
+	<h1>Get started</h1>
+	</Link>
+</div>
+
+
+
+
+</div>
+
+
+
+)
+
+
+
+}
